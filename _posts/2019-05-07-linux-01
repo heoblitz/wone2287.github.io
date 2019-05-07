@@ -1,0 +1,13 @@
+---
+title: "리눅스 tree 명령어 사용하기"
+date: 2019-05-07 20:31:00 -0400
+categories: linux
+---
+우분투에서 tree 명령어 설치하기
+`apt-get install tree`
+
+명령어를 설치하지 않고 find 명령어로 간단하게 출력할 수 있다.
+`find | sed 's|[^/]*/|- |g'`
+
+
+    
