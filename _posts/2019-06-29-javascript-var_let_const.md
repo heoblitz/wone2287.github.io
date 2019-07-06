@@ -105,8 +105,9 @@ a = "it is not";
 ```
 > TypeError: Assignment to constant variable.
 ```
+값이 재지정 될 수 없음을 알려주는 에러코드 이다.
 
-const 로 선언된 object, list 의 경우 요소들의 값 변경이 가능하다.
+그러나 const 로 선언된 object, list 의 경우 요소들의 값 변경이 가능하다.
 ```javascript
 const b = ['a','b'];
 b[0] = 'c';
