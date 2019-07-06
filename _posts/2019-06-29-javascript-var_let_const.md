@@ -8,7 +8,7 @@ categories: javascript
 
 ```javascript
 function getValue(condition){
-    //var value; (hosting 된 변수)
+    // var value; (hosting 된 변수)
 
     if(condition){
         var value = "blue";
@@ -35,7 +35,7 @@ undefined
 
 ```javascript
 var list = document.querySelectorAll("li");
-//var i; (hosting 된 변수)
+// var i; (hosting 된 변수)
 
 for(var i=0; i<list.length; i++){
   list[i].addEventListener("click", fucntion(){
@@ -61,7 +61,7 @@ for(var i=0; i<list.length; i++){
 
 대부분의 프로그래밍 언어는 함수 레벨 스코프(Function-level scope)를 사용한다. 함수가 실행될 때 스택(Stack)에 변수가 쌓이고, 반환될 때 스택프레임이 초기화 되므로 컴퓨터 구조상 자연스러운(?) 방식이라고 생각한다.
 
-위와 같은 var 키워드도 함수 레벨 스코프이지만 자바스크립트 특유의 호이스팅(hosting)이라는 현상때문에 코드를 직관적으로 이해하기 힘든 어려움이 있다.
+var 키워드도 함수 레벨 스코프이지만 자바스크립트 특유의 호이스팅(hosting)이라는 동작때문에 코드를 직관적으로 이해하기 힘든 어려움이 있다.
 
 let 은 블록 레벨 스코프를 지원한다. 함수 단위가 아닌 중괄호 {} 로 구분된 스코프로 변수 범위가 지정된다. 
 
@@ -79,7 +79,7 @@ if(true){
 "red"
 ```
 
-위 코드에서 조건문이 참이 되어 a 변수가 "blue" 가 재선언 되었다고 생각할 수 있지만 이는 if 안에서면 유효하다.
+위 코드에서 조건문이 참이 되어 a 변수가 "blue" 가 재선언 되었다고 생각할 수 있지만 let은 if 안에서만 유효하다.
 
 ```javascript
 if(true){
