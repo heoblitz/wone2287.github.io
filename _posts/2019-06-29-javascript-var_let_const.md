@@ -4,7 +4,7 @@ date: 2019-06-29 12:57:00 -0400
 categories: javascript
 ---
 
-<h2>ES5 까지 사용했던 var 의 문제점</h2>
+<h2>변수 키워드 var 의 문제점</h2>
 
 ```javascript
 function getValue(condition){
