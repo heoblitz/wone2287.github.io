@@ -80,7 +80,8 @@ console.log(a);
 ```
 
 위 코드에서 조건문이 참이 되어 a 변수가 "blue" 가 재선언 되었다고 생각할 수 있지만 let은 if 안에서만 유효하다.
-
+<br>
+<br>
 ```javascript
 if(true){
     let a = "blue";
@@ -92,10 +93,55 @@ console.log(a);
 > "ReferenceError: a is not defined
 ```
 "undefined"가 아닌 "ReferenceError"가 출력됨을 볼 수 있다. 이는 선언 되지 않은 변수를 참조하려고 할 때 발생되는 오류이다.
+<br>
+<br>
+
+const 도 동일하게 블록 레벨 스코프를 지원한다. let 과의 차이점은 변하지 않는 "상수" 라는 점이다.
+```javascript
+const a = "const is const"
+
+a = "it is not";
+```
+```
+> TypeError: Assignment to constant variable.
+```
+
+const 로 선언된 object, list 의 경우 요소들의 값 변경이 가능하다.
+```javascript
+const b = ['a','b'];
+b[0] = 'c';
+
+console.log(b);
+```
+```javascript
+> [ 'c', 'b' ]
+```
+
+<br>
+
+<h2>결론</h2>
+ES6 에서는 var 사용을 권하지 않고, 기본적으로 const 를 사용하고 변해야 하는 값이면 let 키워드를 사용하면 된다.
+
+아까 문제가 되었던 코드에서 let 을 사용하면 정상적으로 작동된다.
+
+```javascript
+const list = document.querySelectorAll("li");
+
+for(let) i=0; i<list.length; i++){
+  list[i].addEventListener("click", fucntion(){
+    console.log(i + "is clicked");
+  })
+}
+```
 
 
+```javascript
+0 is clicked
+1 is clicked
+2 is clicked
+3 is clicked
+```
 
- -작성중-
 
 
 
