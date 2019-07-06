@@ -25,7 +25,7 @@ getValue(false);
 다른 언어에 익숙한 프로그래머는 if 문이 true 일때만 변수가 생성된다고 생각할 수 있지만
 
 
-자바스크립트가 실행될 때 value 변수는 호이스팅(hoisting) 되어 조건문에 관계 없이 변수가 생성된다. 
+자바스크립트가 실행될 때 value 변수는 <a href="https://developer.mozilla.org/ko/docs/Glossary/Hoisting">호이스팅(hoisting)</a> 되어 조건문에 관계 없이 변수가 생성된다. 
 
 ```javascript
 > undefined
