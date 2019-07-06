@@ -128,7 +128,7 @@ ES6 에서는 var 사용을 권하지 않고, 기본적으로 const 를 사용�
 ```javascript
 const list = document.querySelectorAll("li");
 
-for(let) i=0; i<list.length; i++){
+for(let i=0; i<list.length; i++){
   list[i].addEventListener("click", fucntion(){
     console.log(i + "is clicked");
   })
